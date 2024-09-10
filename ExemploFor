@@ -1,0 +1,11 @@
+
+public class ExemploFor {
+	public static void main(String[] args) {
+		String alunos[] = {"felipe", "maria"};
+		
+		for(int x=0;x<alunos.length;x++) {//.length lê qua o tamanho do vetor
+			System.out.println("o aluno do indice x="+x+ "é aluno "+alunos[x]);
+		}
+		
+	}
+}
