@@ -1,0 +1,38 @@
+package br.edu.uft.poo.a2024s2.a03092024;
+/**
+ * 
+ * <h1>Calculadora</h1>
+ * A Calculadora realiza operações matematicas entre dois numero.
+ * 
+ * para desfrutar melhor as funcionalidades necessidades,
+ *  leia na integra o documento do 
+ * @author vitoria leal
+ * @version 1.0
+ * @since 03/09/2024
+ */
+
+public class Calculadora {
+ 
+	/**
+	 * Estes metodo é usado para somar dois numeros inteiros
+	 * @param numeroUm é o primeiro paramentro
+	 * @param numeroDois é o segundo parametro
+	 * @return int o resultado desse metodo é a soma dos dois parametros
+	 */
+	
+	public int somar(int numeroUm, int numeroDois) {
+		return numeroUm+numeroDois;
+	}
+	
+	/**
+	 * Estes metodo é usado para subtrair dois numeros inteiros
+	 * @param numeroUm é o primeiro paramentro
+	 * @param numeroDois é o segundo parametro
+	 * @return int o resultado desse metodo é a subtração dos dois parametros
+	 */
+	
+	public int subtrair(int numeroUm, int numeroDois) {
+		return numeroUm-numeroDois;
+	}
+	
+}
