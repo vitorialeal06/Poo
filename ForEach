@@ -1,0 +1,10 @@
+public class ExemploFor {
+	public static void main(String[] args) {
+		String alunos[] = {"felipe", "maria"};
+		
+		for(String aluno:alunos) {
+			System.out.println(aluno);
+		}
+		
+	}
+}
