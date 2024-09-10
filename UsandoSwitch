@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class UsandoSwitch {
+	public static void main(String [] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("digite basic midia turbo");
+		String entrada = scanner.next();
+	
+		switch(entrada) {
+		case "basic":{
+			System.out.println("basic: 100 min de ligação");
+			break;
+		}
+		
+		
+		case "midia":{
+			System.out.println("midia: 100 min de ligação + whatsapp e instagram gratis");
+			break;
+		}
+		
+		
+		case "turbo":{
+			System.out.println("turbo: 100min ligação + whatsapp e instagram gratis + 5G youtube");
+			break;
+		}
+		default:
+			System.out.println("erro de nome");
+
+		}
+	}
+}
