@@ -1,0 +1,45 @@
+class Carro {
+    private String marca;
+    private String modelo;
+    private int ano;
+
+    public String getMarca(){
+        return marca;
+    }
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public String getModelo(){
+        return modelo;
+    }
+    public void setModelo(String modelo){
+        this.modelo = modelo;
+    }
+    public int getAno(){
+        return ano;
+    }
+
+    public void setAno(int ano){
+        if(ano>=1885)
+            this.ano = ano;
+        else System.out.println("ano invalido");
+    }
+
+    Carro(String marca, String modelo, int ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+    void imprimir() {
+        System.out.println("marca: " + marca + " modelo: " + modelo + " ano: " + ano);
+    }
+
+
+    public static void main(String[] args) {
+        Carro carro = new Carro("tt", "corola", 1666);
+        carro.imprimir();
+
+    }
+}
