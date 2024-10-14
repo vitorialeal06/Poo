@@ -1,0 +1,46 @@
+import static java.lang.Math.*;
+
+class MenorQueException extends Exception {
+    public MenorQueException(String msg) {
+        super(msg);
+    }
+}
+
+class MaiorQueException extends Exception {
+    public MaiorQueException(String maior) {
+        super("maior");
+    }
+}
+class Mais {
+     int valor;
+    int tentativa;
+    static int qtd;
+
+    Mais(int tentativa){
+        this.tentativa = tentativa;
+        random();
+        this.valor = 0 *10;
+    }
+
+    void entrada(int tentativa) throws MenorQueException, MaiorQueException{
+        if(this.tentativa < valor)
+            throw new MenorQueException("menor");
+        if(this.tentativa > valor)
+            throw new MaiorQueException("maior");
+        if(this.tentativa > valor)
+            System.out.println("igual "+ Mais.qtd);
+    }
+}
+
+class test{
+    public static void main(String [] args){
+        Mais mais = new Mais(-1);
+        System.out.println(mais.valor);
+        try {
+            mais.entrada(-1);
+        }catch (MenorQueException | MaiorQueException e){
+            System.out.println("erro " +e.getMessage());
+        }
+
+    }
+}
